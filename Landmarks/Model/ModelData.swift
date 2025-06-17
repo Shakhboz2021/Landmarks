@@ -46,3 +46,10 @@ func load<T: Decodable>(_ fileName: String) -> T {
         fatalError("Couldn't parse \(fileName) as \(T.self):\n\(error)")
     }
 }
+
+import Playgrounds
+
+#Playground {
+    let name = "Muhamad"
+    let landmark = ModelData().landmarks[0]
+}
